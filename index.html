@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoPure Solutions</title>
+    <meta name="description" content="Sustainable, eco-friendly cleaning solutions" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff;
+        color: #333;
+      }
+      header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+      section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .feature-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .feature-card h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+      .cta {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 1.2em;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This div is where React will render the app -->
+    <div id="root"></div>
+
+    <!-- React & ReactDOM CDN links -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel CDN (for JSX support in the browser) -->
+    <script src="https://unpkg.com/@babel/standalone"></script>
+
+    <!-- React App Script -->
+    <script type="text/babel">
+      const App = () => (
+        <div>
+          <header>
+            <h1>Welcome to EcoPure Solutions</h1>
+            <p>Your eco-friendly cleaning partner</p>
+          </header>
+
+          <section>
+            <h2>Why Choose Us?</h2>
+            <p>
+              At EcoPure Solutions, we believe in a cleaner world, using sustainable and non-toxic products that ensure safety for both you and the environment. Discover our services and products today!
+            </p>
+
+            <div className="features">
+              <div className="feature-card">
+                <h3>Eco-Friendly Products</h3>
+                <p>Our products are made from natural ingredients, free of harmful chemicals.</p>
+              </div>
+              <div className="feature-card">
+                <h3>Safe for All</h3>
+                <p>Safe for pets, children, and the environment. Clean without compromise.</p>
+              </div>
+              <div className="feature-card">
+                <h3>Sustainability First</h3>
+                <p>We minimize waste and use sustainable practices to reduce our carbon footprint.</p>
+              </div>
+            </div>
+
+            <div className="cta">
+              <p>Join the movement towards a cleaner, greener future. Get started today!</p>
+              <a href="https://github.com/username" target="_blank" style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none' }}>Learn More</a>
+            </div>
+          </section>
+
+          <footer>
+            <p>&copy; 2024 EcoPure Solutions. All rights reserved.</p>
+          </footer>
+        </div>
+      );
+
+      // Render the app in the #root div
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
